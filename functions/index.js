@@ -1,9 +1,15 @@
 const functions = require('firebase-functions');
+functions.database.ref()
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+// The Firebase Admin SDK to access Cloud Firestore.
+const admin = require('firebase-admin');
+admin.initializeApp();
+
+// Detect when ANY change is made to a courses dates
+exports.courseChange = functions.database.ref('/courses/{course}/dates')
+    .onWrite((change, context) => {
+        const original = change.after.val();
+        console.log('TEST :', context.params.course);
+    });
+
+
