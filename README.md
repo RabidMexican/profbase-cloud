@@ -14,7 +14,7 @@ This script should run on a the ProfBase firebase cloud server and automatically
     npm install -g firebase-tools
 
     cd C:\my\project\folder
-    
+
     firebase emulators:start
 ```
 
@@ -23,6 +23,8 @@ This script should run on a the ProfBase firebase cloud server and automatically
 * Copy our database into your virtual instance of firebase
 
 *   `npm start`
+
+* Change a value in the virtual database and the script should do something
 
 ## References 
 
