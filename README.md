@@ -26,6 +26,14 @@ This script should run on a the ProfBase firebase cloud server and automatically
 
 * Change a value in the virtual database and the script should do something
 
+## Deployment
+
+```bash
+    firebase login
+    
+    firebase deploy
+```
+
 ## References 
 
 https://firebase.google.com/docs/functions/get-started
