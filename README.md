@@ -18,7 +18,7 @@ This script should run on a the ProfBase firebase cloud server and automatically
     firebase emulators:start
 ```
 
-* You can now access the emulated database at http://localhost:4000
+* You can now access the emulated database at http://localhost:4000/database
 
 * Copy our database into your virtual instance of firebase
 

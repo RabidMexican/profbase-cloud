@@ -44,6 +44,8 @@ exports.courseChange = functions.database.ref('/courses/{course}/dates')
                 timeToLive: 60 * 60 * 24
             };
 
+            functions.logger.log("NOTIF SENT TO CHANNEL : " + courseId);
+
             // Send notification to channel with name of courseId
             return admin.messaging().sendToTopic(courseId, payload, options);
 
