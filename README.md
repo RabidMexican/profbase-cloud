@@ -2,6 +2,8 @@
 
 This script should run on a the ProfBase firebase cloud server and automatically send notifications to the users subscribed to modified course schedules.
 
+This runs on a firebase virtual server. To see it in firebase login and then go to [Firebase/project/functions](https://console.firebase.google.com/u/0/project/profbase-79adc/functions/list)
+
 
 ## Requirements
 
